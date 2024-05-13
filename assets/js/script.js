@@ -1,11 +1,12 @@
 // Rock paper scissor lizard spock
 
-const choices = ["rock", "paper", "scissor", "lizard", "spock"];
+const choice = ["rock", "paper", "scissor", "lizard", "spock"];
 
 
 function runGame(playerChoice) {
 
-    const computerChoice = choices[Math.floor(Math.random() * 3)];
+    const computerChoice = choice[Math.floor(Math.random() * 5)];
+    let result = "";
 }
 
 function checkAnswer() {

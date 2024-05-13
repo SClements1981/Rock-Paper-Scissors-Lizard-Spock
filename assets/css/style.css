@@ -27,7 +27,7 @@ body {
 
 /* Game area */
 
-.choices {
+.decision {
     text-transform: uppercase;
     font-size: larger;
     text-shadow: 4rem;
