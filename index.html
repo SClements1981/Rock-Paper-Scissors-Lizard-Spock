@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Rock Paper Scissors Lizard Spock</title>
 </head>
 <body>
     <h1 class="heading">
-        <img class="logo" src="assets/images/Logo.jpg" alt="logo">Rock Paper Scissors Lizard Spock
+        <img class="logo" src="assets/images/Logo.jpg" alt="logo-image">
+        Rock | Paper | Scissors | Lizard | Spock
     </h1>
 
-    <div class="game-area"></div>
+    <section class="game-area">
+        <div>
+            <h4>Make your choice:</h4>
+           <button aria-label="rock" data-choice="0" class="control">&#128074;</button>
+           <button aria-label="paper" data-choice="1" class="control">&#9995;</button>
+           <button aria-label="scissor" data-choice="2" class="scissor"></button>
+           <button aria-label="lizard" data-choice="3" class="control">Lizard</button>
+           <button aria-label="spock" data-choice="4" class="control">&#128406;</button>
+       </div>
 
-    <div class="scoring">
-        <p class="score">Player 1 score<span id="player-score">0</span> </p>
-        <p class="score">Computer score<span id="computer-score">0</span> </p>
-    </div>
+        <div class="scoring">
+            <h4 class="score">Player 1 score: <span id="player-score">0</span> </h4>
+            <h4 class="score">Computer score: <span id="computer-score">0</span> </h4>
+        </div>
+    </section>
 
     <script src="assets/js/script.js"></script>
 </body>
