@@ -93,7 +93,7 @@ button{
     margin-top: 4%;
 }
 
-#playing-image, #computer-image {
+#player-image, #computer-image {
     max-width: 75%;
     padding-bottom: 20px;
 }
