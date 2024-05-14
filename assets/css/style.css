@@ -70,7 +70,7 @@ button{
     height: 45%;
     background-color: rgba(71, 221, 78, 0.486);
     margin-right: 4px;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 .computer {
@@ -81,12 +81,23 @@ button{
     height: 45%;
     background-color: rgba(156, 68, 68, 0.274);
     margin-left: 4px;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 #player-image, #computer-image {
     max-width: 75%;
     padding-bottom: 40px;
+}
+
+.displays {
+    text-transform: uppercase;
+    font-size: larger;
+    margin-top: 5px;
+}
+
+#resultDisplay {
+    font-weight: 200;
+    font-size: x-large;
 }
 
 /* footer */
