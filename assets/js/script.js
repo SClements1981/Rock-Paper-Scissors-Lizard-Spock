@@ -3,64 +3,67 @@ console.log("hello");
 
 /** DOM */
 const choices = ["rock", "paper", "scissor", "lizard", "spock"];
-let playerChoice=document.getElementById("")
-let computerChoice=document.getElementById("")
 
-/**Event listener */
-document.addEventListener("DOMContentLoaded", function(){
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons){
-        button.addEventListener("click", function() {
-        playerSelections = this.click("aria-label");
-            alert(`You clicked ${playerSelections}`);
-        })
-    }
-})
-
-/** Run game */
+/** Reset game  - possible first to 5 and add reset button*/
 function runGame(){
-
 }
 
-function computerChoice(){
+/** New mentor code */
+let playerScore = document.getElementById("player-score").innerText
+let computerScore = document.getElementById("computer-score").innerText
+
+/** Computer random choice */
+function generateRandomChoice(){
     const choice = choices[Math.floor(Math.random() * choices.length)];
     return choice;
 }
 
-function playerChoice(){
-
-}
 
 /** Check winner */
-function checkWinner(){
+function checkWinner(playerChoice){
+    const computerChoice = generateRandomChoice()
+    let result;
+    console.log("this is player choice", playerChoice);
+    console.log(computerChoice);
     if (playerChoice === computerChoice){
-        result = "Draw!";
+        result = "Draw!"; 
+        console.log(result);
+        return;
     }
-    else{
-        switch(playerChoice){
-            case "rock": result = (computerChoice === "scissor" || "lizard") ? "Winner!" : "Loser!"
+    switch(playerChoice){
+            case "rock":
+                result = (computerChoice === "scissors" || "rock") ? "win" : "lose"
             break;
-            case "paper": result = (computerChoice === "rock" || "spock") ? "Winner!" : "Loser!"
+            case "paper":
+                result = (computerChoice === "scissor" || "lizard") ? "win" : "lose"
             break;
-            case "scissor": result = (computerChoice === "paper" || "lizard") ? "Winner!" : "Loser!"
+            case "scissor":
+                result = (computerChoice === "rock" || "spock") ? "win" : "lose"
             break;
-            case "lizard": result = (computerChoice === "paper" || "spock") ? "Winner!" : "Loser!"
+            case "lizard":
+                result = (computerChoice === "rock" || "scissor") ? "win" : "lose"
             break;
-            case "spock": result = (computerChoice === "rock" || "scissor") ? "Winner!" : "Loser!"
+            case "spock":
+                result = (computerChoice === "paper" || "lizard") ? "win" : "lose"
             break;
-        }
     }
+    console.log(result);
 }
 
 /** Player score */
 function incrementScorePlayer(){
-    let oldScorePlayer = parseInt(document.getElementById("player-score").innerText);
-    document.getElementById("player-score").innerText = ++oldScorePlayer;
+    let previousScore = parseInt(playerScore);
+    let updatedScore = previousScore +1;
+    console.log(updatedScore)
+    playerScore = updatedScore
+    document.getElementById("player-score").innerText= updatedScore
 }
 
 /** Computer score */
 function incrementScoreComputer(){
-    let oldScoreComputer = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++oldScoreComputer;
+    let previousComputerScore = parseInt(computerScore);
+    let updatedComputerScore = previousComputerScore +1;
+    console.log(updatedScore)
+    computerScore = updatedScore
+    document.getElementById("computer-score").innerText= updatedScore
 }
