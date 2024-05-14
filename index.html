@@ -17,23 +17,23 @@
 
     <section class="game-area">
         <div>
-            <h4 class="desision">Make your choice:</h4>
-           <button onclick="runGame(`rock`)" aria-label="rock" data-choice="0" class="control"><img class="choice" src="assets/images/Rock.jpg"></button>
-           <button onclick="runGame(`paper`)" aria-label="paper" data-choice="1" class="control"><img class="choice" src="assets/images/Paper.jpg"></button>
-           <button onclick="runGame(`scissor`)" aria-label="scissor" data-choice="2" class="control"><img class="choice" src="assets/images/Scissor.jpg"></button>
-           <button onclick="runGame(`lizard`)" aria-label="lizard" data-choice="3" class="control"><img class="choice" src="assets/images/Lizard.jpg"></button>
-           <button  onclick="runGame(`spock`)" aria-label="spock" data-choice="4" class="control"><img class="choice" src="assets/images/Spock.jpg"></button>
-       </div>
+            <h4 class="selections">Make your choice:</h4>
+           <button aria-label="rock" data-choice="0" class="control"><img class="choice" src="assets/images/Rock.jpg" alt="rock"></button>
+           <button aria-label="paper" data-choice="1" class="control"><img class="choice" src="assets/images/Paper.jpg" alt="paper"></button>
+           <button aria-label="scissor" data-choice="2" class="control"><img class="choice" src="assets/images/Scissor.jpg" alt="scissor"></button>
+           <button aria-label="lizard" data-choice="3" class="control"><img class="choice" src="assets/images/Lizard.jpg" alt="lizard"></button>
+           <button aria-label="spock" data-choice="4" class="control"><img class="choice" src="assets/images/Spock.jpg" alt="spock"></button>
+        </div>
 
         <div class="player">
-            <h4 class="score-player">Human: <span id="player-score">0</span></h4>
+            <h4>Human: <span id="player-score">0</span></h4>
             <img id="player-image" src="assets/images/Logo.jpg" alt="Rock Paper Scissors Lizard Spock">
         </div>
         <div class="computer">
-            <h4 class="score-computer">Computer: <span id="computer-score">0</span></h4>
+            <h4>Computer: <span id="computer-score">0</span></h4>
             <img id="computer-image" src="assets/images/Logo.jpg" alt="Rock Paper Scissors Lizard Spock">
         </div>
-        <div class="result">Result:</div>
+        <div class="result">Result: </div>
     </section>
 
     <script src="assets/js/script.js"></script>
