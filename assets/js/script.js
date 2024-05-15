@@ -47,7 +47,7 @@ function checkWinner(playerChoice) {
         }
     }
         // Player and computer choices displayed on screen
-        playerDisplay.textContent = `You: ${playerChoice}`;
+        playerDisplay.textContent = `Human: ${playerChoice}`;
         computerDisplay.textContent = `Computer: ${computerChoice}`;
     
         // Result of playGame displayed on screen
