@@ -27,8 +27,8 @@ function checkWinner(playerChoice) {
     if (playerChoice === computerChoice) {
         result = "draw";
         console.log(result);
-        return;
         }
+        else {
     switch (playerChoice) {
         case "rock":
             result = (computerChoice === "paper" || computerChoice === "spock") ? "lose" : "win";
@@ -45,18 +45,19 @@ function checkWinner(playerChoice) {
         case "spock":
             result = (computerChoice === "paper" || computerChoice === "lizard") ? "lose" : "win";
             break;
-    }
-    if (result === "win") {
-        incrementScorePlayer();
-    }
-    if (result === "lose") {
-        incrementScoreComputer();
-    }
+        }
+         if (result === "win") {
+            incrementScorePlayer();
+        }
+        if (result === "lose") {
+            incrementScoreComputer();
+        }
 
     /** Show player and computer selection */
     playerDisplay.textContent = `You: ${playerChoice}`;
     computerDisplay.textContent = `Computer: ${computerChoice}`;
-    resultDisplay.textContent = `Result: ${result}`;
+    resultDisplay.textContent = result;
+    }
 }
 
 
