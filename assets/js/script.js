@@ -1,7 +1,7 @@
-// Rock paper scissor lizard spock
+// rock paper scissor lizard spock
 
 /** DOM */
-const choices = ["rock", "paper", "scissors"];
+const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
@@ -16,7 +16,7 @@ let computerScore = 0;
 // Functions checkWinner for computer and player choices
 function checkWinner(playerChoice) {
     // Computer random choice
-    const computerChoice = choices[Math.floor(Math.random() * 3)];
+    const computerChoice = choices[Math.floor(Math.random() * 5)];
     let result = "";
     if (playerChoice === computerChoice) {
         result = "IT'S A TIE!";
