@@ -6,9 +6,7 @@ const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 
-// Functionality for player and computer scores
-const playerScoreDisplay = document.getElementById("playerScoreDisplay");
-const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+// Function for computer scores
 let playerScore = 0;
 let computerScore = 0;
 
@@ -20,8 +18,7 @@ function checkWinner(playerChoice) {
     let result = "";
     if (playerChoice === computerChoice) {
         result = "IT'S A TIE!";
-    }
-    else {
+    } else {
         switch (playerChoice) {
             case "rock":
                 result = (computerChoice === "paper" || computerChoice === "spock") ? "lose" : "win";
@@ -46,26 +43,26 @@ function checkWinner(playerChoice) {
             incrementScoreComputer();
         }
     }
-        // Player and computer choices displayed on screen
-        playerDisplay.textContent = `Human: ${playerChoice}`;
-        computerDisplay.textContent = `Computer: ${computerChoice}`;
-    
-        // Result of playGame displayed on screen
-        resultDisplay.textContent = result;
+    // Player and computer choices displayed
+    playerDisplay.textContent = `Human: ${playerChoice}`;
+    computerDisplay.textContent = `Computer: ${computerChoice}`;
+
+    // Result displayed
+    resultDisplay.textContent = result;
 }
-    
-    /** Player score */
+
+/** Player score increased*/
 function incrementScorePlayer() {
     let previousScore = parseInt(playerScore);
     let updatedScore = previousScore + 1;
     playerScore = updatedScore;
     document.getElementById("playerScoreDisplay").innerText = updatedScore;
-    }
+}
 
-    /** Computer score */
-    function incrementScoreComputer() {
+/** Computer score increased*/
+function incrementScoreComputer() {
     let previousComputerScore = parseInt(computerScore);
     let updatedComputerScore = previousComputerScore + 1;
     computerScore = updatedComputerScore;
     document.getElementById("computerScoreDisplay").innerText = updatedComputerScore;
-    }
+}

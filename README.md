@@ -28,11 +28,11 @@ Rock Paper Scissor Lizard Spock, is an interactive game, the user can pick betwe
 ### Validator Testing
 - HTML
 - No errors were returned when passing through the official
-    [W3C validator] (https://validator.w3.org/nu/?doc=https%3A%2F%2Fsclements1981.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F)
+[W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsclements1981.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F)
 
 - CSS
 - No errors were found when passing through the official 
-[(Jigsaw) validator] (https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsclements1981.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+[(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsclements1981.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - I have tested this site works in differnt browsers, Chrome, Firefox and Safari.
 - The enquires form works correctly, all fields have to filled and the email has to be valid before the form can be submitted.
