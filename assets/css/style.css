@@ -100,15 +100,6 @@ button{
     font-size: x-large;
 }
 
-.greenText,#displays {
-    color: green;
-    font-size: xx-large;
-}
-
-.redText,#displays {
-    color: red;
-    font-size: small;
-}
 
 /* footer */
 
