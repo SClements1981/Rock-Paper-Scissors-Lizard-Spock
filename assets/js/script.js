@@ -6,6 +6,7 @@ const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 
+
 /** Reset game  - possible first to 5 and add reset button*/
 
 
@@ -24,9 +25,10 @@ function checkWinner(playerChoice) {
     const computerChoice = generateRandomChoice();
     let result;
     if (playerChoice === computerChoice) {
-        result = "Draw!";
+        result = "draw";
+        console.log(result);
         return;
-    }
+        }
     switch (playerChoice) {
         case "rock":
             result = (computerChoice === "paper" || computerChoice === "spock") ? "lose" : "win";
@@ -54,7 +56,7 @@ function checkWinner(playerChoice) {
     /** Show player and computer selection */
     playerDisplay.textContent = `You: ${playerChoice}`;
     computerDisplay.textContent = `Computer: ${computerChoice}`;
-    resultDisplay.textContent = `Result: ${result}`
+    resultDisplay.textContent = `Result: ${result}`;
 }
 
 
